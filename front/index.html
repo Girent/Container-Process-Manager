@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>CcontainerNodeManager</title>
+  </head>
+  <body>
+    <h1>List of containers</h1>
+    <button
+      type="button"
+      id="refreshContainerListButton"
+    >
+      Refresh
+    </button>
+    <button
+      type="button"
+      id="addContainerButton"
+      class="addButton"
+    >
+      Add a container
+    </button>
+
+    <ul
+      id="containerList"
+      class="containerList"
+    ></ul>
+
+    <h2>Running containers</h2>
+    <button
+      type="button"
+      id="refreshRunningContainersButton"
+    >
+      Refresh
+    </button>
+    <ul
+      id="runningContainerList"
+      class="containerList"
+    ></ul>
+
+    <div
+      id="modal"
+      class="modal"
+    >
+      <label for="fileInput">Select a file:</label>
+      <input
+        multiple
+        type="file"
+        id="fileInput"
+        accept=".txt, .pdf, .doc, .docx"
+      />
+      <button
+        type="button"
+        id="createContainerButton"
+      >
+        Create a container
+      </button>
+      <button
+        type="button"
+        id="closeModalButton"
+      >
+        Close
+      </button>
+    </div>
+
+    <div
+      id="modal-overlay"
+      class="modal-overlay"
+    ></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
